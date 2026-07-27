@@ -1,0 +1,17 @@
+{
+  "name": "gobritz-immigration-website",
+  "version": "1.0.0",
+  "description": "GoBritz UK Immigration Consultancy Website",
+  "scripts": {
+    "dev": "python -m http.server 8080",
+    "push": "git add . && git commit -m \"auto: update website content\" && git push origin main",
+    "deploy": "git add . && git commit -m \"auto: deploy update to Vercel via GitHub CI/CD\" && git push origin main"
+  },
+  "keywords": [
+    "gobritz",
+    "uk-immigration",
+    "visa-consultancy"
+  ],
+  "author": "GoBritz",
+  "license": "ISC"
+}
