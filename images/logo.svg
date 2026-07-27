@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120">
+  <defs>
+    <!-- UK Flag Color Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4E0A5" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA820A" />
+    </linearGradient>
+    
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C2541" />
+      <stop offset="100%" stop-color="#0B132B" />
+    </linearGradient>
+
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E63946" />
+      <stop offset="100%" stop-color="#C1121F" />
+    </linearGradient>
+
+    <!-- Drop Shadow for Crest -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#0B132B" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Combined UK Landmark Emblem (Shield / Circle base) -->
+  <g transform="translate(10, 5)" filter="url(#shadow)">
+    <!-- Outer Crest Circle with UK Union Jack Pattern Fill -->
+    <circle cx="55" cy="55" r="50" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="3.5" />
+
+    <!-- Subtle UK Union Jack Diagonal & Cross Pattern -->
+    <g opacity="0.25">
+      <!-- Diagonals -->
+      <line x1="15" y1="15" x2="95" y2="95" stroke="#FFFFFF" stroke-width="8" />
+      <line x1="95" y1="15" x2="15" y2="95" stroke="#FFFFFF" stroke-width="8" />
+      <line x1="15" y1="15" x2="95" y2="95" stroke="url(#redGrad)" stroke-width="4" />
+      <line x1="95" y1="15" x2="15" y2="95" stroke="url(#redGrad)" stroke-width="4" />
+      <!-- Main Cross -->
+      <line x1="55" y1="5" x2="55" y2="105" stroke="#FFFFFF" stroke-width="12" />
+      <line x1="5" y1="55" x2="105" y2="55" stroke="#FFFFFF" stroke-width="12" />
+      <line x1="55" y1="5" x2="55" y2="105" stroke="url(#redGrad)" stroke-width="6" />
+      <line x1="5" y1="55" x2="105" y2="55" stroke="url(#redGrad)" stroke-width="6" />
+    </g>
+
+    <!-- Combined Tower Bridge & Big Ben Silhouette in Gold & White -->
+    <!-- Tower Bridge Suspension Cables & Arches -->
+    <path d="M 18 78 Q 35 60 55 60 Q 75 60 92 78" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 22 88 L 35 70 L 35 90 L 75 90 L 75 70 L 88 88" fill="none" stroke="url(#goldGrad)" stroke-width="2" />
+    
+    <!-- Tower Bridge Twin Towers (Left & Right) -->
+    <!-- Left Tower -->
+    <path d="M 30 92 L 30 65 L 35 58 L 40 65 L 40 92 Z" fill="url(#goldGrad)" />
+    <!-- Right Tower -->
+    <path d="M 70 92 L 70 65 L 75 58 L 80 65 L 80 92 Z" fill="url(#goldGrad)" />
+    <!-- Central Bridge Deck & Bascule Walkway -->
+    <rect x="25" y="80" width="60" height="4" fill="#FFFFFF" rx="1" />
+    <rect x="35" y="62" width="40" height="3" fill="url(#goldGrad)" rx="1" />
+
+    <!-- Big Ben Tower (Rising Center-Stage) -->
+    <!-- Clock Tower Body -->
+    <rect x="49" y="32" width="12" height="50" fill="url(#goldGrad)" rx="1" />
+    <!-- Clock Face -->
+    <circle cx="55" cy="42" r="4.5" fill="#FFFFFF" stroke="url(#navyGrad)" stroke-width="1.5" />
+    <line x1="55" y1="42" x2="55" y2="39" stroke="#0B132B" stroke-width="1" />
+    <line x1="55" y1="42" x2="57.5" y2="42" stroke="#0B132B" stroke-width="1" />
+    <!-- Tower Belfry & Roof Spire -->
+    <path d="M 47 32 L 55 18 L 63 32 Z" fill="url(#goldGrad)" />
+    <line x1="55" y1="18" x2="55" y2="12" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" />
+    <circle cx="55" cy="11" r="1.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Typography: GoBritz Immigration Consultancy -->
+  <g transform="translate(130, 0)">
+    <!-- Brand Name: GoBritz -->
+    <text x="0" y="68" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="52" font-weight="800" fill="#0B132B" letter-spacing="-1.5">
+      Go<tspan fill="url(#goldGrad)">Britz</tspan>
+    </text>
+    
+    <!-- Subtitle: IMMIGRATION CONSULTANCY -->
+    <text x="3" y="92" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="13" font-weight="700" fill="#64748B" letter-spacing="3.5">
+      IMMIGRATION CONSULTANCY
+    </text>
+
+    <!-- Subtle UK Red Accent Line -->
+    <rect x="3" y="100" width="280" height="3.5" fill="url(#goldGrad)" rx="2" />
+  </g>
+</svg>
